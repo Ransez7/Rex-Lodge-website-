@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book a Room - REX LODGE</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+
+    <nav>
+        <h2>REX LODGE</h2>
+        <a href="hotel.html">Home</a>
+    </nav>
+
+    <section id="booking" class="section">
+        <h2>Book Your Stay</h2>
+
+        <form id="bookingForm">
+
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <input type="email" id="email" placeholder="Email Address" required>
+
+            <select id="room">
+                <option value="">Select Room</option>
+                <option value="Standard - $15">Standard Room</option>
+                <option value="Deluxe - $25">Deluxe Room</option>
+                <option value="Executive - $40">Executive Suite</option>
+            </select>
+
+            <input type="date" id="checkin" required>
+            <input type="date" id="checkout" required>
+
+            <button type="submit">Confirm Booking</button>
+<div id="confirmationCard" class="confirmation-card" style="display:none;">
+    <h3>Booking Confirmed ✅</h3>
+    <p><strong>Name:</strong> <span id="cName"></span></p>
+    <p><strong>Room:</strong> <span id="cRoom"></span></p>
+    <p><strong>Check-in:</strong> <span id="cCheckin"></span></p>
+    <p><strong>Check-out:</strong> <span id="cCheckout"></span></p>
+    <p><strong>Total Cost:</strong> $<span id="cTotal"></span></p>
+</div>
+        </form>
+
+        <p id="bookingMessage"></p>
+    </section>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
