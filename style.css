@@ -225,3 +225,106 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rooms {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room-card {
+        width: 90%;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+
+    .slider {
+        width: 90%;
+    }
+
+    #booking form {
+        width: 90%;
+    }
+        }button, .book-btn {
+    background: linear-gradient(45deg, #F59E0B, #fbbf24);
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover, .book-btn:hover {
+    transform: scale(1.05);
+        }.section {
+    padding: 60px 20px;
+        }
+    /* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111827;
+    color: white;
+    padding: 15px 20px;
+}
+
+/* LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MENU ICON (hidden on desktop) */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #111827;
+        flex-direction: column;
+        width: 200px;
+        text-align: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    }
