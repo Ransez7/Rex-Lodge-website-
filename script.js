@@ -50,3 +50,9 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
 
     localStorage.setItem("bookings", JSON.stringify(bookings));
 });
+let menuIcon = document.getElementById("menuIcon");
+let navLinks = document.getElementById("navLinks");
+
+menuIcon.addEventListener("click", function() {
+    navLinks.classList.toggle("active");
+});
