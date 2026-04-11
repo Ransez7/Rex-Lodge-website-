@@ -84,7 +84,7 @@ nav ul li a:hover {
 
 .section h2 {
     margin-bottom: 20px;
-    color: #111827;
+    color: black;
 }
 
 
@@ -120,6 +120,7 @@ nav ul li a:hover {
 
 .room-card h3 {
     margin: 10px;
+    color: black;
 }
 
 .room-card p {
@@ -151,10 +152,10 @@ nav ul li a:hover {
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     /* 2 columns */
     gap: 20px;
-    max-width: 800px;
+    max-width: 500px;
     margin: auto;
 }
 
@@ -195,18 +196,6 @@ footer {
     text-align: center;
     padding: 15px;
 }
-.dark-mode {
-    background-color: #111827;
-    color: white;
-}
-
-.dark-mode nav {
-    background-color: black;
-}
-
-.dark-mode .section {
-    background-color: #1f2937;
-}
 .book-btn {
     background: #F59E0B;
     color: white;
@@ -225,46 +214,3 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }      
-/* 📱 MOBILE FIX */
-@media (max-width: 768px) {
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .hero {
-        height: auto;
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .rooms-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .room-card {
-        width: 90%;
-    }
-
-    .services-container {
-        grid-template-columns: 1fr;
-    }
-
-    .service-item {
-        width: 100%;
-    }
-    }
